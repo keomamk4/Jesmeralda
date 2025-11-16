@@ -1,0 +1,42 @@
+.scanner-container {
+  --background: #1c1c1c;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.scanner-text h2 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.scanner-text p {
+  color: #cfcfcf;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.scanner-box {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.qr-frame {
+  width: 260px;
+  height: 260px;
+  border: 3px solid #6a00ff;
+  border-radius: 12px;
+  position: relative;
+}
+
+.btn-scan {
+  margin-top: 40px;
+  --background: #808080;
+  --color: #fff;
+  font-weight: 600;
+  border-radius: 20px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}

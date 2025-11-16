@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Carrito</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ng-container *ngIf="cart.length > 0; else emptyCart">
+    
+    <ion-list>
+      <ion-item *ngFor="let item of cart; let i = index">
+        
+        <ion-thumbnail slot="start">
+          <img [src]="item.image || 'assets/img/default.jpg'" />
+        </ion-thumbnail>
+
+        <ion-label>
+          <h2>{{ item.name }}</h2>
+          <p>S/ {{ item.price }}</p>
+        </ion-label>
+
+        <div class="qty-box">
+          <ion-button size="small" fill="outline" (click)="decrease(item)">-</ion-button>
+          <span>{{ item.qty }}</span>
+          <ion-button size="small" fill="outline" (click)="increase(item)">+</ion-button>
+        </div>
+
+        <ion-button color="danger" fill="clear" (click)="remove(i)">
+          <ion-icon name="trash"></ion-icon>
+        </ion-button>
+
+      </ion-item>
+    </ion-list>
+
+  </ng-container>
+
+  <ng-template #emptyCart>
+    <div class="empty">
+      <ion-icon name="cart-outline"></ion-icon>
+      <p>Tu carrito está vacío</p>
+    </div>
+  </ng-template>
+
+</ion-content>
+
+<ion-footer *ngIf="cart.length > 0">
+  <ion-toolbar>
+    <ion-title>Total: S/ {{ getTotal() }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="checkout()" color="success">Comprar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

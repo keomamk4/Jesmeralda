@@ -1,0 +1,44 @@
+.start-container {
+  --background: #ffffff;
+  text-align: center;
+  padding: 24px;
+}
+
+.header-box {
+  margin-top: 40px;
+}
+
+.header-box h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #333;
+}
+
+.header-box p {
+  font-size: 15px;
+  color: #666;
+  margin-top: 6px;
+}
+
+.image-box {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-box img {
+  width: 80%;
+  max-width: 320px;
+}
+
+.btn-start {
+  margin-top: 50px;
+  --background: #6a00ff;
+  --color: #fff;
+  height: 48px;
+  border-radius: 14px;
+  font-weight: 600;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}

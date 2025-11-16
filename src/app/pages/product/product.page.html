@@ -1,0 +1,52 @@
+<ion-header>
+<ion-toolbar color="primary">
+<ion-buttons slot="start">
+<ion-back-button defaultHref="/menu"></ion-back-button>
+</ion-buttons>
+<ion-title>{{ product.name }}</ion-title>
+</ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+
+<div class="img-box">
+<img [src]="product.image" />
+</div>
+
+
+<div class="info-box">
+<h2>{{ product.name }}</h2>
+<h3>S/ {{ product.price }}</h3>
+
+
+<div class="section">
+<h4>Ingredientes</h4>
+<ul>
+<li *ngFor="let ing of product.ingredients">{{ ing }}</li>
+</ul>
+</div>
+
+
+<div class="section">
+<h4>Vitaminas</h4>
+<ul>
+<li *ngFor="let vit of product.vitamins">{{ vit }}</li>
+</ul>
+</div>
+</div>
+
+
+</ion-content>
+
+
+<ion-footer>
+<ion-toolbar>
+<ion-buttons slot="end">
+<ion-button color="success" (click)="addToCart()">
+Agregar al carrito
+</ion-button>
+</ion-buttons>
+</ion-toolbar>
+</ion-footer>

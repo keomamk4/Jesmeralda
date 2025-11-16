@@ -1,0 +1,12 @@
+ion-menu {
+  --width: 260px;
+}
+
+ion-item {
+  --background: transparent;
+  --color: #222;
+}
+
+ion-item:hover {
+  background: rgba(0, 0, 0, 0.05);
+}

@@ -1,0 +1,83 @@
+.register-container {
+  --background: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+.header-box {
+  margin-top: 40px;
+}
+
+.header-box h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #333;
+}
+
+.header-box p {
+  font-size: 14px;
+  color: #777;
+  margin-top: 6px;
+}
+
+.form-box {
+  margin-top: 40px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-box {
+  background: #f0f0f0;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  padding: 4px 10px;
+}
+
+.btn-register {
+  --background: #6a00ff;
+  --color: #fff;
+  margin-top: 10px;
+  border-radius: 12px;
+  height: 48px;
+  font-weight: 600;
+}
+
+.divider {
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #888;
+  font-size: 14px;
+}
+
+.divider span::before,
+.divider span::after {
+  content: "";
+  width: 80px;
+  height: 1px;
+  background: #ccc;
+  margin: 0 10px;
+}
+
+.btn-google {
+  --background: #fff;
+  --color: #444;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  height: 48px;
+  font-weight: 600;
+}
+
+.login-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #444;
+}
+
+.login-text a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #6a00ff;
+}

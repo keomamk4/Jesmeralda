@@ -1,0 +1,59 @@
+.verification-container {
+  --background: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+.header-box {
+  margin-top: 60px;
+}
+
+.header-box h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #333;
+}
+
+.header-box p {
+  font-size: 14px;
+  color: #777;
+  margin-top: 6px;
+}
+
+.code-box {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.code-input {
+  width: 160px;
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 8px;
+  padding: 10px;
+  background: #f0f0f0;
+  border-radius: 12px;
+}
+
+.btn-verify {
+  --background: #6a00ff;
+  --color: #fff;
+  margin-top: 30px;
+  border-radius: 12px;
+  height: 48px;
+  font-weight: 600;
+}
+
+.resend-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #444;
+}
+
+.resend-text a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #6a00ff;
+  cursor: pointer;
+}

@@ -1,0 +1,21 @@
+<ion-content class="verification-container">
+
+  <div class="header-box">
+    <h2>Verificación</h2>
+    <p>Ingresa el código que enviamos a tu correo</p>
+  </div>
+
+  <div class="code-box">
+    <ion-input maxlength="6" type="text" class="code-input" placeholder="••••••"></ion-input>
+  </div>
+
+  <ion-button expand="block" class="btn-verify">
+    Verificar
+  </ion-button>
+
+  <p class="resend-text">
+    ¿No recibiste el código?
+    <a (click)="resendCode()">Reenviar</a>
+  </p>
+
+</ion-content>

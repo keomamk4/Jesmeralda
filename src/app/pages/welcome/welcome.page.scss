@@ -1,0 +1,4 @@
+.welcome-bg { background-image: url('/src/assets/img/bg-juices.jpg'); background-size: cover; background-position: center; height:100%; }
+.overlay { display:flex; flex-direction:column; align-items:center; justify-content:flex-end; height:100%; padding: 40px 20px 80px; }
+.logo { width: 220px; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.25)); margin-bottom: 40px; }
+.btn-qr { --border-radius: 30px; --background: #bfe45a; --color: #000; font-weight:700; height:56px; }
